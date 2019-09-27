@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sala</title>
+    <link rel="stylesheet" href="css/estilo-room.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            background-image: url("img/livingroom1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .contenedor-menu.scrool {
+            Transition: all .3s ease-in;
+            opacity: 0.95;
+            background-color: rgba(10, 7, 5, 0.85);
+        }
+    </style>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('.contenedor-menu').addClass("scrool");
+                    $('.principal').animate({
+                        'opacity': '1'
+                    }, 1500);
+                } else {
+                    $(".contenedor-menu").removeClass("scrool");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <header>
+            <div class="contenedor-menu">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="" width="180" height="30"></a>
+                </div>
+                <nav class="menu">
+                    <a href="living.html" class="item" style="border-bottom: 2px solid #fff">Sala</a>
+                    <a href="dormitorio.html" class="item">Dormitorio</a>
+                    <a href="cocina.html" class="item">Cocina</a>
+                    <a href="login.html" class="sesion">Sesión</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="principal">
+                <div class="contenedor-item">
+                    <div id="contenido" class="izquierda">
+                        <div class="item">
+                            <p>Luz principal</p>
+                            <img src="img/luzprincipal.jpg" alt="">
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="luz_on-of1">
+                                <label for="luz_on-of1" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Lampara 1</p>
+                            <img src="img/lamp.jpg" alt="">
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="luz_on-of2">
+                                <label for="luz_on-of2" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Lampara 2</p>
+                            <img src="img/lamp.jpg" alt="">
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="luz_on-of3">
+                                <label for="luz_on-of3" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="izquierda">Luces</h2>
+                </div>
+
+                <div class="contenedor-item">
+                    <h2 class="derecha">Puertas</h2>
+                    <div id="contenido" class="derecha">
+                        <div class="item">
+                            <p>Puerta principal</p>
+                            <img src="img/puertaprincipal.jpg" alt="">
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="puerta_on-of1">
+                                <label for="puerta_on-of1" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor-item">
+                    <div id="contenido" class="izquierda">
+                        <div class="item">
+                            <p>Ventanas principal</p>
+                            <img src="img/ventanapricipal.jpg" alt="">
+
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="ventana_on-of1">
+                                <label for="ventana_on-of1" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Ventanas pequeña</p>
+                            <img src="img/ventana.jpg" alt="">
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="ventana_on-of2">
+                                <label for="ventana_on-of2" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="izquierda">Ventanas</h2>
+                </div>
+
+                <div class="contenedor-item">
+                    <h2 class="derecha">Ventiladores</h2>
+                    <div id="contenido" class="derecha">
+                        <div class="item">
+                            <p>Ventilador principal</p>
+                            <img src="img/ventilador.jpg" alt="">
+
+                            <div class="on-of">
+                                <input type="checkbox" class="on-of__checkbox" id="ventilador_on-of1">
+                                <label for="ventilador_on-of1" class="on-of__btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor">
+                <div class="sociales">
+                    <a class="icon-facebook-squared" href=""></a>
+                    <a class="icon-twitter" href=""></a>
+                    <a class="icon-instagram" href=""></a>
+                    <a class="icon-googleplus-rect" href=""></a>
+                </div>
+                <p class="copy">David/Ariel Design &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

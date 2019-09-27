@@ -1,0 +1,117 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(animacion.css);
+
+/*---------PRINCIPAL---------*/
+
+.principal {
+    margin: 130px 102px;
+}
+
+
+/*---------PRINCIPAL---------*/
+
+.contenedor-item {
+    display: flex;
+    margin-top: 20px;
+}
+
+.contenedor-item #contenido {
+    display: flex;
+    padding: 10px 20px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.80);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.contenedor-item #contenido:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contenedor-item .derecha {
+    animation: moverDerecha 1s ease-in;
+}
+
+.contenedor-item .izquierda {
+    animation: moverIzquierda 1s ease-in;
+}
+
+.contenedor-item #contenido .item {
+    display: block;
+}
+
+.contenedor-item h2 {
+    width: 30%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+
+#contenido .item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: auto;
+}
+
+#contenido .item img:hover {
+    border: 5px solid #000;
+}
+
+#contenido .item p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.on-of__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.on-of__btn {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+.on-of__btn::before,
+.on-of__btn::after {
+    content: "";
+    box-shadow: 0 0 0 1px #CCC;
+    transition: all 0.2s ease;
+}
+
+.on-of__btn::before {
+    display: inline-block;
+    border-radius: 1em;
+    height: 1em;
+    width: 2em;
+    margin-right: 0.5em;
+    background: rgb(160, 67, 67);
+}
+
+.on-of__btn::after {
+    position: absolute;
+    top: 0.090em;
+    left: 0.025em;
+    width: 0.95em;
+    height: 0.95em;
+    border-radius: 100%;
+    background: #FFF;
+}
+
+.on-of__checkbox:checked+.on-of__btn::before {
+    background: rgb(66, 146, 79);
+}
+
+.on-of__checkbox:checked+.on-of__btn::after {
+    left: 1.025em;
+}

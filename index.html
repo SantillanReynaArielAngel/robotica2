@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilo-index.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <style>
+        .contenedor-menu.scrool {
+            Transition: all .3s ease-in;
+            opacity: 0.95;
+            background-color: rgba(10, 7, 5, 0.85);
+        }
+    </style>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('.contenedor-menu').addClass("scrool");
+                    $('.principal').animate({
+                        'opacity': '1'
+                    }, 1500);
+                } else {
+                    $(".contenedor-menu").removeClass("scrool");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <header>
+            <div class="contenedor-menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="" width="180" height="30">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <a href="living.html" class="item">Sala</a>
+                    <a href="dormitorio.html" class="item">Dormitorio</a>
+                    <a href="cocina.html" class="item">Cocina</a>
+                    <a href="login.html" class="sesion">Sesión</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="banner">
+                <div class="contenedor-banner">
+                    <h2>No hay lugar con el hogar</h2> <br>
+                    <p>Controle su casa a distancia</p><br>
+                    <a href="#">Leer más</a>
+                </div>
+            </section>
+
+            <section class="principal">
+                <div class="articulo">
+                    <h1>Descripción</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores impedit facilis quidem aut illum praesentium id odio? Nobis, sunt. Iusto sapiente culpa nesciunt qui quasi accusantium necessitatibus architecto repudiandae ipsam. Quasi
+                        fugiat facilis harum doloremque. Rem nihil aperiam molestiae quia vero, error a praesentium quidem blanditiis pariatur dolore perferendis officiis minus voluptate soluta. Architecto, laudantium. Laudantium, illo voluptate. Nostrum,
+                        sint. Omnis repellendus unde, temporibus in dignissimos iusto vel quas aliquam dolorem aperiam voluptatibus libero ullam quidem, officia sunt vitae perferendis minus quae suscipit corrupti amet. Sit vero consectetur dolorum repellendus!
+                        Ullam, est quia vel accusamus ad autem quas iure molestiae saepe pariatur fuga aperiam mollitia, praesentium dignissimos delectus facere blanditiis minus, molestias itaque non numquam nobis quam? Omnis, fugit sit. Veniam at numquam
+                        quidem hic, sapiente maiores aspernatur minima molestias magnam aliquid autem rerum nam culpa voluptatem labore earum magni modi. Maxime enim sapiente voluptatem illum, ullam incidunt ad omnis?</p>
+                </div>
+                <div class="sidebar">
+                    <img src="img/plano.png" alt="">
+                </div>
+            </section>
+
+            <section class="galeria">
+                <h2>Control a distancia</h2>
+                <div class="imagen">
+                    <img src="img/luz.jpg" alt="">
+                    <p>Luces</p>
+                </div>
+
+                <div class="imagen">
+                    <img src="img/puerta.jpg" alt="">
+                    <p>Puertas</p>
+                </div>
+
+                <div class="imagen">
+                    <img src="img/ventana.jpg" alt="">
+                    <p>Ventanas</p>
+                </div>
+
+                <div class="imagen">
+                    <img src="img/ventilador.jpg" alt="">
+                    <p>Ventiladores</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor">
+                <div class="sociales">
+                    <a class="icon-facebook-squared" href=""></a>
+                    <a class="icon-twitter" href=""></a>
+                    <a class="icon-instagram" href=""></a>
+                    <a class="icon-googleplus-rect" href=""></a>
+                </div>
+                <p class="copy">David/Ariel Design &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

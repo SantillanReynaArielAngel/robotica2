@@ -1,0 +1,109 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(animacion.css);
+
+/*---------BANNER---------*/
+
+#banner {
+    background-image: url("../img/banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .contenedor-banner {
+    color: #fff;
+    padding-top: 225px;
+    padding-bottom: 225px;
+    animation: arriba 1s ease-in;
+}
+
+#banner h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#banner p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin: 20px auto;
+    border: 3px solid #fff;
+    text-align: center;
+}
+
+#banner a:hover {
+    background: rgba(51, 51, 51, 0.5);
+}
+
+
+/*---------PRINCIPAL---------*/
+
+.principal {
+    display: flex;
+    margin: 30px 102px;
+}
+
+.articulo {
+    margin-top: 30px;
+}
+
+.articulo h1 {
+    font-size: 50px;
+    color: #000;
+}
+
+.articulo p {
+    font-size: 15px;
+    color: #000;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    margin-top: 30px;
+}
+
+
+/*---------GALERIA---------*/
+
+.galeria {
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 30px 100px;
+}
+
+.galeria h2 {
+    width: 100%;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.galeria .imagen img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.galeria .imagen p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.galeria .imagen img:hover {
+    border: 10px solid #000;
+}

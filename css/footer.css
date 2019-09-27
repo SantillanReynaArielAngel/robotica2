@@ -1,0 +1,32 @@
+footer .contenedor {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.copy {
+    font-size: 12px;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+}
+
+.sociales {
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+}
+
+.sociales a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sociales a:hover {
+    color: #515503;
+}
